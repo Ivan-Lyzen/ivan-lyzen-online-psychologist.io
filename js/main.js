@@ -1,5 +1,6 @@
 "use strict";
 //=============== Modal ================
+
 //Get modal element
 var modal = document.getElementById('simpleModal');
 //Get open button
