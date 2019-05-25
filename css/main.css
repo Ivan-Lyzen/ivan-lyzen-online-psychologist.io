@@ -36,6 +36,21 @@ h6 {
   height: auto;
   background-color: #ffffff;
 }
+.header__logo {
+  width: 10%;
+  height: auto;
+  text-align: center;
+}
+.header__logo img {
+  width: 50%;
+  height: auto;
+  vertical-align: middle;
+}
+.header__inner {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
 .header__line {
   display: flex;
   justify-content: space-between;
@@ -67,13 +82,12 @@ h6 {
 }
 .header__btn {
   border: 2px solid #01a7c1;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border-radius: 3px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #2386aa;
-  line-height: 0.9;
   text-transform: uppercase;
   transition: background-color 0.3s linear;
 }
@@ -102,8 +116,7 @@ h6 {
 .nav__link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 0.9;
+  font-size: 15px;
   color: #212121;
   text-transform: uppercase;
   position: relative;
@@ -151,8 +164,7 @@ h6 {
 .hidden__link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
+  font-size: 15px;
   color: #212121;
   text-transform: uppercase;
   position: relative;
@@ -243,23 +255,26 @@ h6 {
 .tab-h {
   display: inline-block;
   width: 33.3333%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  color: #01658b;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid #01a7c1;
   border-right: none;
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
 }
 .tab-h:last-child {
-  border-right: 1px solid black;
+  border-right: 1px solid #01a7c1;
 }
 .tab-b {
   width: 100%;
   height: auto;
   display: none;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid #01a7c1;
   text-align: center;
 }
 
