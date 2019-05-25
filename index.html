@@ -27,7 +27,7 @@
       <div class="container">
         <div class="header__logo">
             <a href="#" class="header__inner">
-                <img src="img/logo.png" alt="Mind Help" class="logo">
+                <img src="./img/header/logo.png" alt="Mind Help" class="logo">
             </a>
         </div><!-- / .Logo -->
 
@@ -38,6 +38,7 @@
                 </li>
                 <li class="nav__links hidden">
                     <a href="#" class="nav__link hidden">Услуги</a>
+
                     <ul class="hidden__list">
                         <li class="hidden__links"><a class="hidden__link" href="#">Выбор специалиста</a></li>
                         <li class="hidden__links"><a class="hidden__link" href="#">Лучшие врачи</a></li>
@@ -61,7 +62,7 @@
         </div><!-- /.header__registered -->
 
         <div class="header__login">
-            <img src="img/login.png" alt="login">
+            <img id="modalBtn" class="modalBtn" src="./img/header/login.png" alt="login">
         </div><!-- /.header__login -->
 
         <div class="header__language">
@@ -79,7 +80,12 @@
     </header><!-- / .Header -->
 
 
-
+    <div id="simpleModal" class="simpleModal">
+      <div class="simpleModal__content">
+        <span id="closeBtn" class="closeBtn">&times;</span>
+        <p>hello... i am a modal</p>
+      </div>
+    </div>
 
 
     <main class="main"></main>
