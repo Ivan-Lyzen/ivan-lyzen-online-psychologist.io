@@ -36,3 +36,72 @@ function clickOutside(event) {
   }
 }
 //=============== /Modal ================
+
+/* Tabs for modal user and doctor */
+
+window.onload = function () {
+
+  document.querySelector('.simpleModal__tabs').addEventListener('click', fTabs);
+
+
+  function fTabs(event) {
+    if (event.target.className == 'tab-h') {
+
+      //the number of the tab you want to display
+      var dataTab = event.target.getAttribute('data-tab');
+
+      //disable class active
+      var tabH = document.getElementsByClassName('tab-h');
+
+      for (var x = 0; x < tabH.length; x++) {
+        tabH[x].classList.remove('active');
+      }
+      //add class active
+      event.target.classList.add('active');
+
+      //all tabs with content
+      var tabBody = document.getElementsByClassName('tab-b');
+      
+      for (var x = 0; x < tabBody.length; x++) {
+        if (dataTab == x) {
+          tabBody[x].style.display = 'block';
+        }
+        else {
+          tabBody[x].style.display = 'none';
+        }
+      }
+    }
+  }
+};
+
+/* / Tabs for modal user and doctor */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

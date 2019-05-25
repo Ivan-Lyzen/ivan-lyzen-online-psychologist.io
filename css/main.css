@@ -190,8 +190,8 @@ h6 {
 }
 .simpleModal__content {
   background-color: #f4f4f4;
-  margin: 20% auto;
-  padding: 20px;
+  margin: 7% auto;
+  padding: 50px 20px;
   width: 50%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalOpen;
@@ -201,7 +201,6 @@ h6 {
 
 .closeBtn {
   color: #cccccc;
-  float: right;
   position: absolute;
   display: inline-block;
   top: 10px;
@@ -222,6 +221,53 @@ h6 {
     opacity: 1;
   }
 }
+/* Tabs for modal user and doctor */
+.simpleModal__body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.simpleModal__tabs {
+  width: 100%;
+  height: auto;
+  font-size: 0;
+  position: relative;
+  z-index: 2;
+}
+.simpleModal__tabs-desc {
+  position: relative;
+  top: -1px;
+  z-index: 1;
+}
+
+.tab-h {
+  display: inline-block;
+  width: 33.3333%;
+  font-size: 16px;
+  height: auto;
+  border: 1px solid black;
+  border-right: none;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.tab-h:last-child {
+  border-right: 1px solid black;
+}
+.tab-b {
+  width: 100%;
+  height: auto;
+  display: none;
+  padding: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.active {
+  border-bottom-color: white;
+}
+
+/*================================*/
 /* ===== End loginModal ===== */
 
 /*# sourceMappingURL=main.css.map */
