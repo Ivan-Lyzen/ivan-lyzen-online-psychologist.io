@@ -1,1 +1,1 @@
-# ivan-lyzen-online-psychologist.io
+# https://ivan-lyzen.github.io/ivan-lyzen-online-psychologist.io/

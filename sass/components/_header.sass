@@ -1,0 +1,83 @@
+
+.header
+  width: 100%
+  min-height: 122px
+  height: auto
+  background-color: #ffffff
+
+  &__line
+    display: flex
+    justify-content: space-between
+    &-color
+      width: 20%
+      height: 6px
+      &:nth-child(1)
+        background-color: #00668c
+      &:nth-child(2)
+        background-color: #048fb2
+      &:nth-child(3)
+        background-color: #04b4d0
+      &:nth-child(4)
+        background-color: #0485b5
+      &:nth-child(5)
+        background-color: #00668c
+
+
+.container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+
+/* navigation */
+.nav
+
+  &__inner
+    margin: 0
+    padding: 0
+    font-size: 0
+
+  &__links
+    list-style: none
+    display: inline-block
+    vertical-align: middle
+    font-size: 16px
+
+    &:last-child
+      margin-right: 0
+
+    &:hover
+      background-color: #01a7c1
+
+  &__link
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    font-size: 20px
+    line-height: .9
+    color: #212121
+
+.hidden
+  position: relative
+  .hidden__list
+    display: none
+    position: absolute
+    top: 70px
+    left: 0
+    margin: 0
+    font-size: 0
+    background-color: #fff
+    padding: 10px 0
+
+  &__links
+    font-size: 16px
+    list-style: none
+    margin-bottom: 10px
+    width: 170px
+    padding: 10px
+
+    &:last-child
+      margin-bottom: 0
+
+  &:hover
+    .hidden__list
+      display: block
