@@ -98,6 +98,11 @@ h6 {
 }
 
 /* navigation */
+.nav {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
 .nav__inner {
   margin: 0;
   padding: 0;
@@ -141,12 +146,13 @@ h6 {
 .hidden .hidden__list {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 0;
   margin: 0;
   font-size: 0;
   background-color: #fff;
   padding: 10px 0;
+  text-align: left;
 }
 .hidden__links {
   font-size: 16px;
@@ -284,5 +290,75 @@ h6 {
 
 /*================================*/
 /* ===== End loginModal ===== */
+/* ===== preview ===== */
+.preview {
+  background-color: #969696;
+  background-image: url("../img/preview/preview-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-bottom: 7px solid #969696;
+}
+.preview__title {
+  padding: 200px 0 20px 0;
+  position: relative;
+}
+.preview__title::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 10px;
+  bottom: 10px;
+  left: 40%;
+  background-color: #01a7c1;
+}
+.preview__title h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.preview__desc {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.preview__desc p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.preview__btn {
+  margin-bottom: 20px;
+}
+.preview__btn a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 15px;
+  background-color: #01a7c1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 0.5;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.preview__btn a:hover {
+  background-color: #038ba0;
+  color: #fff;
+  border-radius: 3px;
+}
+.preview__arrow {
+  padding-bottom: 80px;
+}
+
+/* ===== End preview ===== */
 
 /*# sourceMappingURL=main.css.map */

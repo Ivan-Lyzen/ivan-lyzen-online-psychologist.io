@@ -1,0 +1,63 @@
+.preview
+  background-color: #969696
+  background-image: url('../img/preview/preview-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: bottom
+  width: 100%
+  height: auto
+  text-align: center
+  border-bottom: 7px solid #969696
+
+  &__title
+    padding: 200px 0 20px 0
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      width: 20%
+      height: 10px
+      bottom: 10px
+      left: 40%
+      background-color: #01a7c1
+    h1
+      font-family: 'Roboto', sans-serif
+      font-weight: 700
+      font-size: 58px
+      text-transform: uppercase
+      color: #ffffff
+
+  &__desc
+    width: 50%
+    margin: 0 auto
+    padding-bottom: 80px
+    p
+      margin: 0
+      font-family: 'Roboto', sans-serif
+      font-size: 24px
+      font-weight: 400
+      color: #ffffff
+
+  &__btn
+    margin-bottom: 20px
+    a
+      display: inline-block
+      vertical-align: top
+      padding: 20px 15px
+      background-color: #01a7c1
+      font-family: 'Roboto', sans-serif
+      font-weight: 400
+      font-size: 30px
+      line-height: .5
+      text-transform: uppercase
+      color: #ffffff
+      border-radius: 3px
+
+      &:hover
+        background-color: #038ba0
+        color: #fff
+        border-radius: 3px
+
+  &__arrow
+    padding-bottom: 80px
