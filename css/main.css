@@ -33,7 +33,6 @@ h6 {
 /* ===== header ===== */
 .header {
   width: 100%;
-  min-height: 122px;
   height: auto;
   background-color: #ffffff;
 }
@@ -60,11 +59,28 @@ h6 {
 .header__line-color:nth-child(5) {
   background-color: #00668c;
 }
-
-.container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
+}
+.header__btn {
+  border: 2px solid #01a7c1;
+  padding: 15px 20px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #2386aa;
+  line-height: 0.9;
+  text-transform: uppercase;
+  transition: background-color 0.3s linear;
+}
+.header__btn:hover {
+  background-color: #01a7c1;
+  border-color: #2386aa;
+  color: #ffffff;
 }
 
 /* navigation */
@@ -78,12 +94,10 @@ h6 {
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
+  margin-right: 40px;
 }
 .nav__links:last-child {
   margin-right: 0;
-}
-.nav__links:hover {
-  background-color: #01a7c1;
 }
 .nav__link {
   font-family: "Roboto", sans-serif;
@@ -91,6 +105,21 @@ h6 {
   font-size: 20px;
   line-height: 0.9;
   color: #212121;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #212121;
+  transition: width 0.3s linear;
+}
+.nav__link:hover::after {
+  width: 100%;
 }
 
 .hidden {
@@ -99,7 +128,7 @@ h6 {
 .hidden .hidden__list {
   display: none;
   position: absolute;
-  top: 70px;
+  top: 20px;
   left: 0;
   margin: 0;
   font-size: 0;
@@ -110,7 +139,7 @@ h6 {
   font-size: 16px;
   list-style: none;
   margin-bottom: 10px;
-  width: 170px;
+  width: 250px;
   padding: 10px;
 }
 .hidden__links:last-child {
@@ -118,6 +147,28 @@ h6 {
 }
 .hidden:hover .hidden__list {
   display: block;
+}
+.hidden__link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #212121;
+  text-transform: uppercase;
+  position: relative;
+}
+.hidden__link::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #212121;
+  transition: width 0.3s linear;
+}
+.hidden__link:hover::before {
+  width: 100%;
 }
 
 /* ===== End header ===== */

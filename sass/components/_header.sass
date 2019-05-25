@@ -1,7 +1,6 @@
 
 .header
   width: 100%
-  min-height: 122px
   height: auto
   background-color: #ffffff
 
@@ -23,10 +22,29 @@
         background-color: #00668c
 
 
-.container
-  display: flex
-  justify-content: space-between
-  align-items: center
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+
+  &__btn
+    border: 2px solid #01a7c1
+    padding: 15px 20px
+    border-radius: 3px
+
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+    font-size: 15px
+    color: #2386aa
+    line-height: .9
+    text-transform: uppercase
+    transition: background-color .3s linear
+
+    &:hover
+      background-color: #01a7c1
+      border-color: #2386aa
+      color: #ffffff
 
 
 /* navigation */
@@ -42,12 +60,10 @@
     display: inline-block
     vertical-align: middle
     font-size: 16px
+    margin-right: 40px
 
     &:last-child
       margin-right: 0
-
-    &:hover
-      background-color: #01a7c1
 
   &__link
     font-family: 'Roboto', sans-serif
@@ -55,13 +71,35 @@
     font-size: 20px
     line-height: .9
     color: #212121
+    text-transform: uppercase
+    position: relative
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: -1px
+      left: 0
+      height: 2px
+      width: 0
+      background-color: #212121
+      transition: width .3s linear
+
+    &:hover::after
+      width: 100%
+
+
+
+
+
+
 
 .hidden
   position: relative
+
   .hidden__list
     display: none
     position: absolute
-    top: 70px
+    top: 20px
     left: 0
     margin: 0
     font-size: 0
@@ -72,7 +110,7 @@
     font-size: 16px
     list-style: none
     margin-bottom: 10px
-    width: 170px
+    width: 250px
     padding: 10px
 
     &:last-child
@@ -81,3 +119,25 @@
   &:hover
     .hidden__list
       display: block
+
+  &__link
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    font-size: 20px
+    line-height: 1
+    color: #212121
+    text-transform: uppercase
+    position: relative
+
+    &::before
+      content: ''
+      position: absolute
+      bottom: -3px
+      left: 0
+      height: 2px
+      width: 0
+      background-color: #212121
+      transition: width .3s linear
+
+    &:hover::before
+      width: 100%
