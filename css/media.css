@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+  header__mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

@@ -7,140 +7,217 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mind Help | Онлайн психолог</title>
 
-  <!-- Tabs img -->
-  <link rel="shortcut icon" type="image/x-icon" href="img/TabImg/logo-tab.ico">
+  <!-- Tabs img favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./img/icon-tab/favicon.ico">
 
   <!--  Fonts  -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
   <!--  Font Awesome  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-  <!-- Normalize CSS -->
-  <link rel="stylesheet" href="links/normalize-css/normalize.css">
-
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="links/bootstrap-4/css/bootstrap.min.css">
   <!--  Style  -->
   <link rel="stylesheet" href="css/main.css">
 </head>
   <body>
     <header class="header">
+      <div class="header__desktop fixed-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-2 col-lg-2 no-padding">
+              <div class="header__logo">
+                <a href="#"><img class="header__img" src="img/header/logo_2.png" alt="Онлайн психолог"></a>
+              </div><!-- /.header__logo -->
+            </div>
+
+            <div class="col-lg-5 no-padding">
+              <div class="header__nav">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Выбор специалиста</a>
+                      <a class="dropdown-item" href="#">Лучшие врачи</a>
+                      <a class="dropdown-item" href="#">Как это работает?</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="header__appointment">
+                      <a class="nav-link" href="#">О нас</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Блог</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="col-lg-3 no-padding">
+              <div class="header__appointment">
+                <a class="header__appointment-link" href="#">Записаться на прием</a>
+              </div>
+            </div>
+              <div class="col-lg-1 no-padding">
+                <div class="header__login">
+                  <a href="#" class="header__login-modal" data-toggle="modal" data-target=".bd-example-modal-xl">
+                    <i class="fas fa-sign-in-alt"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-1 no-padding">
+                <a href="#">pyc</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /Header__desktop column  -->
+
+
+
+
+
+
       <div class="container">
-        <div class="header__logo">
-            <a href="#" class="header__inner">
-                <img src="./img/header/logo.png" alt="Mind Help" class="logo">
-            </a>
-        </div><!-- / .Logo -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header__mobile">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img class="navbar__img" src="img/header/logo_2.png" alt="Онлайн психолог"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <nav class="nav">
-            <ul class="nav__inner">
-                <li class="nav__links">
-                    <a href="#" class="nav__link">Главная</a>
-                </li>
-                <li class="nav__links hidden">
-                    <a href="#" class="nav__link hidden">Услуги</a>
-
-                    <ul class="hidden__list">
-                        <li class="hidden__links"><a class="hidden__link" href="#">Выбор специалиста</a></li>
-                        <li class="hidden__links"><a class="hidden__link" href="#">Лучшие врачи</a></li>
-                        <li class="hidden__links"><a class="hidden__link" href="#">Как это работает?</a></li>
-                    </ul>
-                </li>
-                <li class="nav__links">
-                    <a href="#" class="nav__link">О нас</a>
-                </li>
-                <li class="nav__links">
-                    <a href="#" class="nav__link">Отзывы</a>
-                </li>
-                <li class="nav__links">
-                    <a href="#" class="nav__link">Блог</a>
-                </li>
-            </ul>
-        </nav><!-- /.header__nav -->
-
-        <div class="header__registered">
-            <a href="#" class="header__btn">Записаться на прием</a>
-        </div><!-- /.header__registered -->
-
-        <div class="header__login">
-            <img id="modalBtn" class="modalBtn" src="./img/header/login.png" alt="login">
-        </div><!-- /.header__login -->
-
-        <div class="header__language">
-            рус
-        </div><!-- /.header__language -->
-      </div><!-- / .container -->
-
-      <div class="header__line">
-        <div class="header__line-color"></div>
-        <div class="header__line-color"></div>
-        <div class="header__line-color"></div>
-        <div class="header__line-color"></div>
-        <div class="header__line-color"></div>
-      </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Услуги
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Выбор специалиста</a>
+                        <a class="dropdown-item" href="#">Лучшие врачи</a>
+                        <a class="dropdown-item" href="#">Как это работает?</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Записаться на прием</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="img/header/login.png" alt="login"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">pyc</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div><!-- /Header__mobile column  -->
+        </div>
+      </div><!-- /Header__mobile-container -->
     </header><!-- / .Header -->
 
 
-    <div id="simpleModal" class="simpleModal">
-      <div class="simpleModal__content">
+    <main class="main"></main><!-- / .main -->
 
-        <div class="simpleModal__header">
-          <span id="closeBtn" class="closeBtn">&times;</span>
-        </div><!-- / .simpleModal__header -->
-
-        <div class="simpleModal__body">
-          <div class="simpleModal__tabs">
-
-            <div class="tab-h" data-tab="0">Регистрация пациента</div><!-- / .tab__user -->
-
-            <div class="tab-h" data-tab="1">Регистрация доктора</div><!-- / .tab__doctor -->
-
-            <div class="tab-h active" data-tab="2">Вход</div><!-- / .tab__enter -->
-
-          </div>
-
-          <div class="simpleModal__tabs-desc">
-            <div class="tab-b" style="display: block">
-              Form for user Contact Form 7 (plugin)
-            </div><!-- /.tab__user-form -->
-
-            <div class="tab-b">
-              Form for doctor Contact Form 7 (plugin)
-            </div><!-- /.tab__doctor-form -->
-
-            <div class="tab-b">
-              Form for enter Contact Form 7 (plugin)
-            </div><!-- /.tab__enter-form -->
-          </div><!-- / .simpleModal__tabs-desc -->
-        </div><!-- / .simpleModal__body -->
-
-      </div>
-    </div><!-- / .simpleModal -->
+    <footer class="footer"></footer><!-- / .footer -->
 
 
-    <main class="main">
-      <div class="preview">
-        <div class="container">
-          <div class="preview__title">
-            <h1>Lorem ipsum dolor</h1>
-          </div>
 
-          <div class="preview__desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-          </div>
-          <div class="preview__btn">
-            <a href="#">Узнать больше</a>
-          </div>
-          
-          <div class="preview__arrow">
-            <a href="#"><img src="./img/preview/preview-arrow.png" alt="стрелка в низ"></a>
+
+
+
+    <!-- Modal login -->
+    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="modal-line">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 no-padding">
+                    <ul class="modal-lines">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 no-padding">
+                  <div class="column__left">
+                    <p class="column__left-title">Добро пожаловать!</p>
+                    <p class="column__left-desc">Рады приветстовать Вас на нашей<br>платформе психологической помощ</p>
+                  </div>
+                </div>
+                <div class="col-md-6 no-padding">
+                  <div class="column__right">
+                    <p class="column__right-title"><span>Вход</span><br>Еще не зарегестрированы?
+                      <a class="column__right-registered" href="#">Регистрация</a></p>
+                    <form>
+                      <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                               placeholder="E-mail или номер мобильного">
+                      </div>
+
+                      <div class="form-group">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+                        <small id="emailHelp" class="form-text text-muted"><a href="#">Забыли пароль?</a></small>
+                      </div>
+
+                      <div class="form-group form-check">
+                        <input type="radio" class="form-check-input doctor" id="doctor" name="login" value="doctor" checked>
+                        <label class="form-check-label" for="doctor">Я - врач</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="radio" class="form-check-input patient" id="patient" name="login" value="patient">
+                        <label class="form-check-label" for="patient">Я - пациент</label>
+                      </div>
+
+                      <div class="btn__login">
+                        <button type="submit" class="btn btn-enter">Войти</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div><!-- /.main__preview -->
-    </main>
+      </div>
+    </div><!-- / end modal login -->
 
-    <footer class="footer"></footer>
+    <!-- Bootstrap 4 + JQ + popper js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="links/bootstrap-4/js/bootstrap.min.js"></script>
 
-
+    <!-- Main JS -->
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
