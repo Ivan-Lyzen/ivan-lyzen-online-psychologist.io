@@ -17,6 +17,7 @@
   <!--  Font Awesome  -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="links/bootstrap-4/css/bootstrap.min.css">
   <!--  Style  -->
@@ -45,7 +46,7 @@
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Выбор специалиста</a>
                     <a class="dropdown-item" href="#">Лучшие врачи</a>
-                    <a class="dropdown-item" href="#">Как это работает?</a>
+                    <a class="dropdown-item" href="#work">Как это работает?</a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -157,32 +158,107 @@
 
 
       <div class="preview__desc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna </p>
+        <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna </p>
       </div>
 
       <div class="preview__btn">
         <a href="#">Узнать больше</a>
       </div>
+
       <div class="preview__arrow">
+        <a href="#"><img src="./img/preview/preview-arrow.png" alt="arrow"></a>
       </div>
     </div>
 
 
 
 
-    <div class="main__box">
+    <div class="main__about">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="main__title">
-              <h2>O нас</h2>
+              <h2>O Нас</h2>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="main__desc">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id porro eos voluptate error repellat
+                provident mollitia! Voluptates exercitationem voluptas quod?</p>
+              <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+              </ul>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis at debitis numquam porro iusto
+                adipisci!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="main__img">
+              <img src="./img/general-img/about-us.jpg" alt="about us">
+            </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div><!-- / about -->
 
 
+      <div class="main__work" id="work">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="main__title-work">
+                <h2>Как это работает?</h2>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="main__desc">
+                <img src="./img/general-img/work/one.png" alt="one">
+              </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="main__desc">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, animi. Eveniet dolore temporibus vero repellendus, iusto dignissimos, placeat neque praesentium recusandae, quam molestiae. Ipsa sit commodi sunt vero laboriosam iure.</p>
+              </div>
+            </div>
+
+              <div class="col-md-9">
+                <div class="main__desc">
+                  <h4>Lorem ipsum dolor sit.</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, animi. Eveniet dolore temporibus vero repellendus, iusto dignissimos, placeat neque praesentium recusandae, quam molestiae. Ipsa sit commodi sunt vero laboriosam iure.</p>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="main__desc number-two">
+                  <img src="./img/general-img/work/two.png" alt="two">
+                </div>
+              </div>
+
+            <div class="col-md-3">
+              <div class="main__desc">
+                <img src="./img/general-img/work/three.png" alt="three">
+              </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="main__desc">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, animi. Eveniet dolore temporibus vero repellendus, iusto dignissimos, placeat neque praesentium recusandae, quam molestiae. Ipsa sit commodi sunt vero laboriosam iure.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div><!-- / .main__work -->
 
 
   </main><!-- / .main -->
@@ -223,6 +299,7 @@
                   <p class="column__left-desc">Рады приветстовать Вас на нашей<br>платформе психологической помощ</p>
                 </div>
               </div>
+
               <div class="col-md-6 no-padding">
                 <div class="column__right">
                   <p class="column__right-title"><span>Вход</span><br>Еще не зарегестрированы?
@@ -243,6 +320,7 @@
                         <input type="radio" class="form-check-input doctor" id="doctor" name="login" value="doctor" checked>
                         <label class="form-check-label" for="doctor">Я - врач</label>
                       </div>
+
                       <div class="form-group form-check">
                         <input type="radio" class="form-check-input patient" id="patient" name="login" value="patient">
                         <label class="form-check-label" for="patient">Я - пациент</label>

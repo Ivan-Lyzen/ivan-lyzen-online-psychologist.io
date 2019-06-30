@@ -1,0 +1,41 @@
+.main
+  &__work
+    margin: 80px 0 80px 0
+    background-image: url('../img/general-img/work-bg.jpg')
+    background-size: contain
+    background-position: right
+    background-repeat: no-repeat
+
+  &__title
+    &-work
+      text-align: right
+
+      h2
+        font-family: $font
+        font-weight: 700
+        font-size: 60px
+        color: $color-title
+        display: inline-block
+        vertical-align: top
+        position: relative
+        text-transform: capitalize
+
+        &::after
+          content: ''
+          position: absolute
+          width: 30%
+          height: 10px
+          background-color: #01a7c1
+          left: 70%
+          bottom: -10px
+
+  &__desc
+    margin-bottom: 50px
+
+    img
+      width: 80%
+      height: auto
+
+.number
+  &-two
+    text-align: right

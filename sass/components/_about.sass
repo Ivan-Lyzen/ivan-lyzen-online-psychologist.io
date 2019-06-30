@@ -1,0 +1,49 @@
+.main
+  &__about
+    background-image: url(../img/general-bg/cube.jpg)
+    background-repeat: no-repeat
+    background-position: -100px -30px
+    background-size: contain
+    padding: 150px 0 0 0
+
+  &__title
+    h2
+      font-family: $font
+      font-weight: 700
+      font-size: 60px
+      color: $color-title
+      display: inline-block
+      vertical-align: top
+      position: relative
+      text-transform: capitalize
+
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 10px
+        background-color: #01a7c1
+        left: 0
+        bottom: -10px
+
+  &__desc, &__img
+    margin-top: 20px
+
+  &__desc
+    p
+      font-family: $font
+      font-size: 24px
+      font-weight: 400
+      color: #516062
+
+    ul
+      li
+        font-family: $font
+        font-size: 20px
+        font-weight: 400
+        color: #516062
+
+  &__img
+    img
+      width: 100%
+      height: auto
