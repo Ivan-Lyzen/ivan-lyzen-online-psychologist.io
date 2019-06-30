@@ -26,19 +26,19 @@
     text-align: center
 
     &-link
-      font-family: 'Roboto', sans-serif
+      font-family: $font
       font-weight: 700
       font-size: 15px
       text-transform: uppercase
       display: inline-block
       vertical-align: middle
-      color: #2386aa
+      color: $color-hover
       padding: 10px 20px
-      border: 2px solid #2386aa
+      border: 2px solid $color-hover
 
       &:hover
         text-decoration: none
-        background-color: #2386aa
+        background-color: $color-hover
         color: #ffffff
 
 
@@ -46,7 +46,7 @@
     text-align: center
     &-modal
       font-size: 25px
-      color: #2386aa
+      color: $color-hover
 
 
 
@@ -56,7 +56,7 @@
 
   &-link
     text-transform: uppercase
-    font-family: 'Roboto', sans-serif
+    font-family: $font
     font-weight: 500
     font-size: 15px
     color: #212121
@@ -115,7 +115,7 @@
     box-sizing: border-box
 
     &-title
-      font-family: 'Roboto', sans-serif
+      font-family: $font
       font-weight: 700
       font-size: 60px
       color: #fffefe
@@ -138,7 +138,7 @@
       margin: 0
       padding-top: 50px
 
-      font-family: 'Roboto', sans-serif
+      font-family: $font
       font-weight: 400
       font-size: 19px
       line-height: 24px
@@ -148,13 +148,13 @@
     padding: 100px 70px
 
     &-title
-      font-family: 'Roboto', sans-serif
+      font-family: $font
       font-weight: 400
       font-size: 16px
       color: #737373
 
       span
-        font-family: 'Roboto', sans-serif
+        font-family: $font
         font-weight: 700
         font-size: 48px
         color: #242424
@@ -184,9 +184,11 @@
   &-check
     width: 50%
     float: left
+    &::after
+      clear: both
 
     &-label
-      font-family: 'Roboto', sans-serif
+      font-family: $font
       font-weight: 400
       font-size: 20px
       color: #242424
@@ -199,7 +201,7 @@
   &-enter
     background-color: #048fb2
     padding: 10px 50px
-    font-family: 'Roboto', sans-serif
+    font-family: $font
     font-weight: 500
     font-size: 20px
     color: #fffefe

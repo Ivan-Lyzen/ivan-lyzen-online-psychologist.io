@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mind Help | Онлайн психолог</title>
 
@@ -14,41 +15,107 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
   <!--  Font Awesome  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="links/bootstrap-4/css/bootstrap.min.css">
   <!--  Style  -->
   <link rel="stylesheet" href="css/main.css">
 </head>
-  <body>
-    <header class="header">
-      <div class="header__desktop fixed-top">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-2 col-lg-2 no-padding">
-              <div class="header__logo">
-                <a href="#"><img class="header__img" src="img/header/logo_2.png" alt="Онлайн психолог"></a>
-              </div><!-- /.header__logo -->
-            </div>
 
-            <div class="col-lg-5 no-padding">
-              <div class="header__nav">
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Главная</a>
+<body>
+  <header class="header">
+    <div class="header__desktop">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-2 col-lg-2 no-padding">
+            <div class="header__logo">
+              <a href="#"><img class="header__img" src="img/header/logo_2.png" alt="Онлайн психолог"></a>
+            </div><!-- /.header__logo -->
+          </div>
+
+          <div class="col-lg-5 no-padding">
+            <div class="header__nav">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Главная</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Выбор специалиста</a>
+                    <a class="dropdown-item" href="#">Лучшие врачи</a>
+                    <a class="dropdown-item" href="#">Как это работает?</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="header__appointment">
+                    <a class="nav-link" href="#">О нас</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Блог</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 no-padding">
+            <div class="header__appointment">
+              <a class="header__appointment-link" href="#">Записаться на прием</a>
+            </div>
+          </div>
+          <div class="col-lg-1 no-padding">
+            <div class="header__login">
+              <a href="#" class="header__login-modal" data-toggle="modal" data-target=".big-login">
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
+            </div>
+          </div>
+          <div class="col-lg-1 no-padding">
+            <a href="#">pyc</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /Header__desktop column  -->
+
+
+
+
+
+
+    <!-- Header__mobile-container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header__mobile">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#"><img class="navbar__img" src="img/header/logo_2.png" alt="Онлайн психолог"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Услуги
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Выбор специалиста</a>
                       <a class="dropdown-item" href="#">Лучшие врачи</a>
                       <a class="dropdown-item" href="#">Как это работает?</a>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <div class="header__appointment">
-                      <a class="nav-link" href="#">О нас</a>
-                    </div>
+                    <a class="nav-link" href="#">О нас</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Отзывы</a>
@@ -56,137 +123,109 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Блог</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Записаться на прием</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="img/header/login.png" alt="login"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">pyc</a>
+                  </li>
                 </ul>
               </div>
-            </div>
+            </nav>
+          </div>
+        </div><!-- /Header__mobile column  -->
+      </div>
+    </div><!-- /Header__mobile-container -->
+  </header><!-- / .Header -->
+
+  <main class="main">
+    <div class="preview">
+      <ul class="modal-lines">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="preview__title">
+        <h1>LOREM IPSUM DOLOR</h1>
+      </div>
 
 
-            <div class="col-lg-3 no-padding">
-              <div class="header__appointment">
-                <a class="header__appointment-link" href="#">Записаться на прием</a>
-              </div>
-            </div>
-              <div class="col-lg-1 no-padding">
-                <div class="header__login">
-                  <a href="#" class="header__login-modal" data-toggle="modal" data-target=".bd-example-modal-xl">
-                    <i class="fas fa-sign-in-alt"></i>
-                  </a>
+      <div class="preview__desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna </p>
+      </div>
+
+      <div class="preview__btn">
+        <a href="#">Узнать больше</a>
+      </div>
+      <div class="preview__arrow">
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </main><!-- / .main -->
+
+  <footer class="footer">foooter</footer><!-- / .footer -->
+
+
+
+
+
+
+  <!-- Modal login -->
+  <div class="modal fade big-login" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-line">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 no-padding">
+                  <ul class="modal-lines">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
                 </div>
-              </div>
-              <div class="col-lg-1 no-padding">
-                <a href="#">pyc</a>
               </div>
             </div>
           </div>
-        </div><!-- /Header__desktop column  -->
-
-
-
-
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="header__mobile">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img class="navbar__img" src="img/header/logo_2.png" alt="Онлайн психолог"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Услуги
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Выбор специалиста</a>
-                        <a class="dropdown-item" href="#">Лучшие врачи</a>
-                        <a class="dropdown-item" href="#">Как это работает?</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">О нас</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Отзывы</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Блог</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Записаться на прием</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"><img src="img/header/login.png" alt="login"></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">pyc</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div><!-- /Header__mobile column  -->
-        </div>
-      </div><!-- /Header__mobile-container -->
-    </header><!-- / .Header -->
-
-
-    <main class="main"></main><!-- / .main -->
-
-    <footer class="footer"></footer><!-- / .footer -->
-
-
-
-
-
-
-    <!-- Modal login -->
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="modal-line">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12 no-padding">
-                    <ul class="modal-lines">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 no-padding">
+                <div class="column__left">
+                  <p class="column__left-title">Добро пожаловать!</p>
+                  <p class="column__left-desc">Рады приветстовать Вас на нашей<br>платформе психологической помощ</p>
                 </div>
               </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 no-padding">
-                  <div class="column__left">
-                    <p class="column__left-title">Добро пожаловать!</p>
-                    <p class="column__left-desc">Рады приветстовать Вас на нашей<br>платформе психологической помощ</p>
-                  </div>
-                </div>
-                <div class="col-md-6 no-padding">
-                  <div class="column__right">
-                    <p class="column__right-title"><span>Вход</span><br>Еще не зарегестрированы?
-                      <a class="column__right-registered" href="#">Регистрация</a></p>
-                    <form>
-                      <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               placeholder="E-mail или номер мобильного">
-                      </div>
+              <div class="col-md-6 no-padding">
+                <div class="column__right">
+                  <p class="column__right-title"><span>Вход</span><br>Еще не зарегестрированы?
+                    <a class="column__right-registered" href="#" data-toggle="modal" data-target=".big-registred">Регистрация</a>
+                  </p>
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                              placeholder="E-mail или номер мобильного">
+                    </div>
 
                       <div class="form-group">
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
                         <small id="emailHelp" class="form-text text-muted"><a href="#">Забыли пароль?</a></small>
                       </div>
 
@@ -202,22 +241,188 @@
                       <div class="btn__login">
                         <button type="submit" class="btn btn-enter">Войти</button>
                       </div>
-                    </form>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div><!-- / end modal login -->
+    </div>
+  </div><!-- / end modal login -->
 
-    <!-- Bootstrap 4 + JQ + popper js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="links/bootstrap-4/js/bootstrap.min.js"></script>
 
-    <!-- Main JS -->
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+
+
+  <!-- Modal registred -->
+  <div class="modal fade big-registred" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-line">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 no-padding">
+                  <ul class="modal-lines">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 no-padding">
+                <div class="registred-title">
+                  <p>Зарегистрироваться как:</p>
+                </div>
+              </div>
+
+              <div class="col-md-6 no-padding">
+                <div class="box-left">
+                  <a href="#" data-toggle="modal" data-target=".registration-itself">Врач</a>
+                </div>
+              </div>
+              <div class="col-md-6 no-padding">
+                <div class="box-right">
+                  <a href="#" data-toggle="modal" data-target=".registration-itself">Пациент</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.Modal registred -->
+
+
+
+  <!-- registration itself -->
+  <div class="modal fade registration-itself" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="modal-line">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 no-padding">
+                  <ul class="modal-lines">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="registration__title">
+                  <p>Введите свои данные:</p>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <form class="registration__form" id="registration">
+                  <div class="form-group registration__group">
+                    <input type="text" class="form-control" placeholder="Имя">
+                    <input type="text" class="form-control" placeholder="Фамилия">
+                    <input type="tel" class="form-control" placeholder="Номер мобильного">
+                    <input type="email" class="form-control" placeholder="Электронный адрес">
+                    <input type="password" class="form-control" placeholder="Пароль">
+                    <input type="password" class="form-control" placeholder="Повторите пароль">
+                </div>
+
+                    <div class="data">
+                      <p class="data__birth">Дата рождения:</p>
+                    </div>
+                    <select class="registration__select" name="day" id="registration">
+                  <option value="one" selected>1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                  <option value="four">4</option>
+                  <option value="fife">5</option>
+                  <option value="six">6</option>
+                  <option value="seven">7</option>
+                  <option value="eigth">8</option>
+                  <option value="nine">9</option>
+                  <option value="ten">10</option>
+                  <option value="eleven">11</option>
+                  <option value="twelwe">12</option>
+                  <option value="thirteen">13</option>
+                  <option value="fourteen">14</option>
+                  <option value="fifteen">15</option>
+                  <option value="sixteen">16</option>
+                  <option value="seventeen">17</option>
+                  <option value="eighteen">18</option>
+                  <option value="nineteen">19</option>
+                  <option value="twenty">20</option>
+                  <option value="twenty-one">21</option>
+                  <option value="twenty-two">22</option>
+                  <option value="twenty-three">23</option>
+                  <option value="twenty-four">24</option>
+                  <option value="twenty-five">25</option>
+                  <option value="twenty-six">26</option>
+                  <option value="twenty-seven">27</option>
+                  <option value="twenty-eigth">28</option>
+                  <option value="twenty-nine">29</option>
+                  <option value="thirty">30</option>
+                  <option value="thirty-one">31</option>
+                </select>
+
+
+                    <select class="registration__select" name="month" id="registration">
+                  <option value="January" selected>январь</option>
+                  <option value="February">февраль</option>
+                  <option value="March">март</option>
+                  <option value="April">апрель</option>
+                  <option value="May">май</option>
+                  <option value="June">июнь</option>
+                  <option value="July">июль</option>
+                  <option value="August">август</option>
+                  <option value="September">сентябрь</option>
+                  <option value="October">октябрь</option>
+                  <option value="November">ноябрь</option>
+                  <option value="December">декабрь</option>
+                </select>
+
+
+                    <select class="registration__select" name="years" id="registration">
+                  <option value="1998" selected>1998</option>
+                  <option value="2000">2000</option>
+                  <option value="2012">2012</option>
+                  <option value="2015">2015</option>
+                  <option value="2020">2020</option>
+                </select>
+
+                    <div class="btn__login">
+                      <button type="submit" class="btn btn-enter registration__btn">Регистрация</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.registration itself -->
+
+  <!-- Bootstrap 4 + JQ + popper js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="links/bootstrap-4/js/bootstrap.min.js"></script>
+
+  <!-- Main JS -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

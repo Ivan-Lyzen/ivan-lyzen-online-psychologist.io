@@ -10,14 +10,14 @@
   height: 100%
   width: 100%
   overflow: auto
-  background-color: rgb(0, 0, 0, .4)
+  background-color: rgba(0, 0, 0, .4)
 
   &__content
     background-color: #f4f4f4
     margin: 7% auto
     padding: 50px 20px
     width: 50%
-    box-shadow: 0 5px 8px 0 rgb(0, 0, 0, .2), 0 7px 20px 0 rgb(0, 0, 0, .17)
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17)
     animation-name: modalOpen
     animation-duration: 1s
     position: relative
@@ -25,7 +25,6 @@
 
 .closeBtn
   color: #cccccc
-  //float: right
   position: absolute
   display: inline-block
   top: 10px
@@ -66,7 +65,7 @@
   &-h
     display: inline-block
     width: 33.3333%
-    font-family: 'Roboto', sans-serif
+    font-family: $font
     font-weight: 400
     font-size: 16px
     color: #01658b
@@ -90,4 +89,80 @@
 
 .active
   border-bottom-color: white
+/*================================*/
+
+
+
+
+
+/*========= How registred =========*/
+.registred
+  &-title
+    text-align: center
+    margin: 80px 0 80px 0
+    p
+      font-family: $font
+      font-weight: 700
+      font-size: 36px
+      color: #242424
+
+
+.box
+  &-left, &-right
+    text-align: center
+    margin-bottom: 80px
+    a
+      font-family: $font
+      font-weight: 700
+      font-size: 48px
+      color: #5b5b5b
+/*================================*/
+
+
+
+
+
+/*===== registration-itself =====*/
+.registration
+  &__title
+    text-align: center
+    margin: 80px 0 80px 0
+
+    p
+      font-family: $font
+      font-weight: 700
+      font-size: 36px
+      color: #242424
+
+  &__group
+    display: flex
+    flex-wrap: wrap
+    text-align: center
+
+    input
+      width: calc(50% - 25px)
+      margin: 0 25px 25px 0
+
+      &:nth-child(even)
+        margin: 0 0 0 0
+  &__select
+    padding: 5px 10px 5px 10px
+
+  &__btn
+    margin: 0 0 80px 0
+    background-color: $color-hover
+    text-transform: uppercase
+    font-family: $font
+    font-weight: 500
+    font-size: 20px
+    color: #ffffff
+
+
+
+.data
+  &__birth
+    font-family: $font
+    font-weight: 400
+    font-size: 20px
+    color: #393939
 /*================================*/
